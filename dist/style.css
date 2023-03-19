@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100%;
+    border-bottom: 1px solid black;
+}
+
+header > nav, header > h1 {
+    flex: 1;
+}
+
+header > h1 {
+    padding-left: 3em;
+}
+
+nav > ul {
+    padding-right: 3em;
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me, .my-skills, .my-projects {
+    padding: 5em;
+}
