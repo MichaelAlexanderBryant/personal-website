@@ -1,60 +1,44 @@
 :root {
-    font-family: Work Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    --card-background: #2e3031;
     --tw-text-opacity: 1;
     color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+html {
+    width: 100%;
 }
 
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    max-width: 100%;
 }
 
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    backdrop-filter: blur(10px);
+
+    background-color: #b62c43d3;
+    color: white;
+
+    z-index: 1;
+
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    max-width: 100%;
-    border-bottom: 1px solid rgb(31 41 55 / var(--tw-text-opacity));
-    background: rgba(255,255,255,.85);
-    backdrop-filter: blur(6px);
-    padding-left: 9.5em;
 }
 
 nav > ul {
     padding-right: 3em;
     list-style: none;
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 nav > ul > li > a {
     text-decoration: none;
-    color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
-.home {
-    height: fit-content;
-    padding: 5em 12em 2em 12em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10em;
-}
-
-.home-img {
-    width: 25em;
-    height: auto;
-}
-
-h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 3em;
+    color: white;
 }
 
 .social-media-icons {
@@ -63,6 +47,31 @@ h1 {
     gap: 2em;
     padding: 1em;
 }
+
+.home-container {
+    display:flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    background-color: rgb(31 41 55 / var(--tw-text-opacity));
+    color: white;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 3em;
+}
+
+
 
 .social-media-icons > a {
     text-decoration: none;
@@ -73,11 +82,40 @@ h1 {
     width: 2em;
 }
 
-.about-me, .my-skills, .my-projects, footer {
-    padding: 3em 12em;
+.about-me, .my-skills, .my-projects {
+    padding: 2em;
     border-top: 1px solid rgb(31 41 55 / var(--tw-text-opacity));
 }
 
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.about-left {
+    flex:2;
+}
+
+.about-right {
+    flex:1;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.headshot-img {
+    width: 80%;
+    height: auto;
+}
 
 .about-img {
     width: 20em;
@@ -96,8 +134,18 @@ h1 {
     padding: 2em 0;
 }
 
+.my-skills {
+    background-color: rgb(31 41 55 / var(--tw-text-opacity));
+    color: white;
+}
 
-.skills-container {
+.skill-icons {
     display: flex;
-    justify-content: space-evenly;
+    gap: 1em;
+}
+
+footer {
+    background-color: rgb(31 41 55 / var(--tw-text-opacity));
+    color: white; 
+    height: 4em;
 }
