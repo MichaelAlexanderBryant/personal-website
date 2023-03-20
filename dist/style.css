@@ -14,7 +14,6 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,10 +22,7 @@ header {
     border-bottom: 1px solid rgb(31 41 55 / var(--tw-text-opacity));
     background: rgba(255,255,255,.85);
     backdrop-filter: blur(6px);
-}
-
-header > h1 {
-    padding-left: 1em;
+    padding-left: 9.5em;
 }
 
 nav > ul {
@@ -43,7 +39,7 @@ nav > ul > li > a {
 
 .home {
     height: fit-content;
-    padding: 5em 6em;
+    padding: 5em 12em 2em 12em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,13 +74,17 @@ h1 {
 }
 
 .about-me, .my-skills, .my-projects, footer {
-    padding: 3em 10em;
+    padding: 3em 12em;
     border-top: 1px solid rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 
 .about-img {
     width: 20em;
+}
+
+.thesis-link {
+    color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .about-nau, .about-lanl {
