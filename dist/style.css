@@ -48,30 +48,41 @@ nav > ul > li > a {
     padding: 1em;
 }
 
-.home-container {
-    display:flex;
-    flex-direction: column;
-    gap: 2em;
-    align-items: center;
-}
-
 .home {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10em;
     background-color: rgb(31 41 55 / var(--tw-text-opacity));
     color: white;
+
 }
 
-h1 {
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.home-name {
+    font-size: 5em;
+    color: #fac113;
+}
+
+.home-greeting,.home-name, .home-title, .home-description {
     padding: 0;
     margin: 0;
-    font-size: 3em;
 }
 
+.home-title {
+    font-size: 2em;
+}
 
+.home-description {
+    font-size: 1em;
+}
 
 .social-media-icons > a {
     text-decoration: none;
@@ -91,7 +102,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
 }
 
 .about-left {
@@ -105,8 +115,7 @@ h1 {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
 
 }
 
