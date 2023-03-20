@@ -15,14 +15,12 @@ header {
     width: 100vw;
     max-width: 100%;
     border-bottom: 1px solid black;
-}
-
-header > nav, header > h1 {
-    flex: 1;
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(6px);
 }
 
 header > h1 {
-    padding-left: 3em;
+    padding-left: 1em;
 }
 
 nav > ul {
@@ -40,6 +38,14 @@ nav > ul {
     align-items: center;
 }
 
-.about-me, .my-skills, .my-projects {
-    padding: 5em;
+.about-me, .my-skills, .my-projects, footer {
+    padding: 6em;
+    border-top: 1px solid black;
+}
+
+
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
 }
