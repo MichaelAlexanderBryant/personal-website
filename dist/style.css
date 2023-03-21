@@ -94,8 +94,16 @@ nav > ul > li > a {
     width: 2em;
 }
 
+.home {
+    padding: 0em 5em;
+}
+
 .about-me, .my-skills, .my-projects {
-    padding: 2em;
+    padding: 3em 5em;
+}
+
+.about-me, .my-skills, .my-projects {
+    
     border-top: 1px solid rgb(31 41 55 / var(--tw-text-opacity));
 }
 
@@ -158,6 +166,21 @@ nav > ul > li > a {
 
 .skill-icon {
     width: 5em;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
