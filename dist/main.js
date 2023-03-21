@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://webpack-template/./src/index.js?");
+eval("const myNav = document.getElementById('header')\n\nwindow.onscroll = () => {\n  if(window.scrollY > window.innerHeight*.9){\n    myNav.classList.add('scrolled')\n  }else{\n    myNav.classList.remove('scrolled')\n  }\n}\n\n//# sourceURL=webpack://webpack-template/./src/index.js?");
 
 /***/ })
 
