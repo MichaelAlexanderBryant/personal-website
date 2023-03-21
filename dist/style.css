@@ -56,7 +56,8 @@ nav > ul > li > a {
     align-items: center;
     background-color: rgb(31 41 55 / var(--tw-text-opacity));
     color: white;
-
+    /* background-image: url("./assets/home-background.jpg");
+    background-size: cover; */
 }
 
 .home-container {
@@ -130,7 +131,7 @@ nav > ul > li > a {
     width: 20em;
 }
 
-.thesis-link {
+.thesis-link, .lanl-link {
     color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
@@ -150,7 +151,13 @@ nav > ul > li > a {
 
 .skill-icons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
+    justify-content: space-evenly;
+}
+
+.skill-icon {
+    width: 5em;
 }
 
 footer {
