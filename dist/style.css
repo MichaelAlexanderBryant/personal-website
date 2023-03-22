@@ -189,11 +189,28 @@ nav > ul > li > a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1em;
+    background-color: rgb(31 41 55 / var(--tw-text-opacity));
+    color: white;
     
 }
 
 .project-preview {
     width: 100%;
+}
+
+.project-btn-container {
+    display: flex;
+    gap: 2em;
+}
+
+.project-btn {
+    background-color: #b62c43d3;
+    border: 0;
+    width: 12em;
+    height: 3em;
+    color: white;
+    font-size: 1em;
 }
 
 footer {
